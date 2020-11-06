@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>The propety</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-9">
+
+				<div class="row tiles">
+					<!-- tiles will be here from db.json -->
+				</div>
+
+				<div class="show-more">
+					<img class="show-more__img" src="img/plus-circle.svg" alt="more">
+					<span class="show-more__span">Показать больше</span>
+				</div>
+			</div>
+			<div class="col-3 ">
+				<form id="sorting" class="side-bar">
+					<div class="side-bar__block">
+						<div class="side-bar__title">
+							<div class="title__span">Близость к метро</div>
+							<img class="title__img" src="img/chevron-up.svg">
+						</div>
+						<div class="side-bar__metro hidden-elem">
+							<div class="metro">
+								<div class="metro__item" value='0 - 10'>&lt; 10</div>
+								<div class="metro__item" value='10 - 20'>10-20</div>
+								<div class="metro__item" value='20 - 30'>20-30</div>
+								<div class="metro__item" value='30 - 1000'>30+</div>
+							</div>
+							<div class="metro">
+								<div class="metro__item metro__item-big metro__item-active" value='0 - 1000'>Любая</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="side-bar__block">
+						<div class="side-bar__title">
+							<div class="title__span">Предпочтительная цена</div>
+							<img class="title__img" src="img/chevron-up.svg">
+						</div>
+						<div class="side-bar__price hidden-elem">
+							<div class="price">
+								<div class="price__item">
+									<label for="from" class="price__label">от</label>
+									<input id="from" type="text" class="price__input price__input-min" name="from"
+										placeholder="3 000 000">
+								</div>
+								<div class="price__item">
+									<label for="to" class="price__label">до</label>
+									<input id="to" type="text" class="price__input price__input-max" name="to"
+										placeholder="41 300 000">
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<div class="side-bar__block">
+						<div class="side-bar__title">
+							<div class="title_span">Срок сдачи</div>
+							<img class="title__img" src="img/chevron-up.svg">
+						</div>
+						<div class="options hidden-elem">
+							<div class="options__item options__item-active">
+								<input checked class="options__item-radio" type="radio" name="timing" id="any"
+									value='0'>
+								<label class="options__item-label" for="any">Любой</label>
+							</div>
+
+							<div class="options__item">
+								<input class="options__item-radio" type="radio" name="timing" id="done" value='2019'>
+								<label class="options__item-label" for="done">Сдан</label>
+							</div>
+
+							<div class="options__item">
+								<input class="options__item-radio" type="radio" name="timing" id="this-year"
+									value='2020'>
+								<label class="options__item-label" for="this-year">В этом году</label>
+							</div>
+
+							<div class="options__item">
+								<input class="options__item-radio" type="radio" name="timing" id="next-year"
+									value='2021'>
+								<label class="options__item-label" for="next-year">В следующем году</label>
+							</div>
+						</div>
+					</div>
+					<div class="side-bar__block">
+						<div class="side-bar__title">
+							<div class="title_span">Дополнительные опции</div>
+							<img class="title__img" src="img/chevron-up.svg">
+						</div>
+
+						<div class="side-bar__extra hidden-elem">
+							<div class="extra__item">
+								<input class="extra__checkbox" type="checkbox" name="extra" id="without-cars">
+								<label class="extra__label" for="without-cars">Двор без машин</label>
+							</div>
+							<div class="extra__item">
+								<input class="extra__checkbox" type="checkbox" name="extra" id="high-ceiling">
+								<label class="extra__label" for="high-ceiling">Высокие потолки</label>
+							</div>
+							<div class="extra__item">
+								<input class="extra__checkbox" type="checkbox" name="extra" id="panarama">
+								<label class="extra__label" for="panarama">Панарамные окна</label>
+							</div>
+							<div class="extra__item">
+								<input class="extra__checkbox" type="checkbox" name="extra" id="storeroom">
+								<label class="extra__label" for="storeroom">Есть кладовые</label>
+							</div>
+							<div class="extra__item">
+								<input class="extra__checkbox" type="checkbox" name="extra" id="small">
+								<label class="extra__label" for="small">Малоэтажный</label>
+							</div>
+							<div class="extra__item extra__item-hide">
+								<input class="extra__checkbox" type="checkbox" name="extra" id="many">
+								<label class="extra__label" for="many">Многоэтажный</label>
+							</div>
+							<div class="extra__item extra__item-hide">
+								<input class="extra__checkbox" type="checkbox" name="extra" id="good">
+								<label class="extra__label" for="good">Хороший</label>
+							</div>
+							<div class="extra__item extra__item-hide">
+								<input class="extra__checkbox" type="checkbox" name="extra" id="bad">
+								<label class="extra__label" for="bad">Плохой</label>
+							</div>
+						</div>
+
+						<div class="side-bar__more">Показать еще</div>
+
+					</div>
+					<div class="services">
+						<input class="services__checkbox" type="checkbox" name="services" id="services">
+						<label class="services__label" for="services">Услуги 0%</label>
+					</div>
+					<div class="side-bar__buttons">
+						<button type="submit" class="btn__apply">Применить фильтры</button>
+						<button class="btn__delete">
+							<img src="img/x.svg" alt="delete">
+							<span>Сбросить фильтры</span>
+						</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+
+
+	<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+.tiles {
+	
+	.item {
+		position: relative;
+		margin-bottom: 30px;
+		background-color: $white;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		box-shadow: 0px 3px 3px rgba(0,0,0, .5);
+		width: 270px;
+		&:hover .item__price {
+			bottom: 0;
+		}
+		&__additional-info{
+			position: absolute;
+			top: 10px;
+			left: 15px;
+			display: flex;
+		}
+		&__header {
+			position: relative;
+			overflow: hidden;
+		}
+		&__class, &__credit  {
+			padding: 3px 10px;
+			margin-right: 10px;
+			font-size: 14px;
+			line-height: 16px;
+			background-color: $primary;
+			border-radius: 4px;
+		}
+		&__credit {
+			margin: 0;
+			background-color: $secondary;
+			color: $white;
+		}
+		&__img {
+			display: block;
+			width: 100%;
+			height: 197px;
+			line-height: 0;
+			font-size: 0;
+			&-small {
+				margin-right: 10px;
+			}
+		}
+		&__price {
+			position: absolute;
+			bottom: -40px;
+			left: 0;
+			background-color: rgba(0,0,0, .6);
+			color: $white;
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+			font-size: 18px;
+			font-weight: 600;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			transition: all .3s ease;
+		}
+		
+		&__descr {
+			padding: 15px;
+		}
+		&__title, &__timing, &__metro {
+			padding-bottom: 10px;
+		}
+		&__timing, &__metro, &__address {
+			font-size: 14px;
+			line-height: 16px;	
+		}
+		&__title {
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 21px;
+		}
+		&__metro {
+			display: flex;
+			align-items: center;
+		}
+		&__address {
+			color: $grey;
+		}
+	}
+}
+
+
+.show-more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: darken($main, 10%);
+	border-radius: 4px;
+	height: 80px;
+	cursor: pointer;
+	&__img {
+		margin-right: 10px;
+	}
+	&__span {
+		font-size: 18px;
+		line-height: 21px;
+		text-align: center;
+	}
+}
+
+.hide {
+	display: none;
+}

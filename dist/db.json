@@ -1,0 +1,84 @@
+{
+	"properties": [{
+			"name": "ЖК Ильинская Луга",
+			"price": "3000000",
+			"image": "http://bitnet.ru/assets/files/2016/10/zhk_voshod_krasnodar_39pgng-300x218.jpg",
+			"metroName": "Отктябрьская",
+			"metro": 5,
+			"timing": 2018,
+			"extra": ["without-cars", "high-ceiling", "small"]
+		},
+		{
+			"name": "ЖК Преображениие",
+			"price": "25983000",
+			"image": "https://icdn.lenta.ru/images/2018/04/09/14/20180409142143966/pic_611583a636ca7d0457103a8c3b3f2422.jpg",
+			"metroName": "Новокосинская",
+			"metro": 10,
+			"timing": 2019,
+			"extra": ["without-cars", "high-ceiling", "panarama", "storeroom", "small"]
+		},
+		{
+			"name": "ЖК Академика Павлова",
+			"price": "10932050",
+			"image": "https://www.restate.ru/attachment/b70bcdc9d12bfe3a0bfef1bef34bf638e072f743/proportional/1800x1260/1.jpg",
+			"metroName": "Авиамоторная",
+			"metro": 15,
+			"timing": 2020,
+			"extra": ["without-cars", "high-ceiling"]
+		},
+		{
+			"name": "ЖК Марьино",
+			"price": "9320000",
+			"image": "https://cdn-p.cian.site/images/7/730/229/aviatika-moskva-jk-922037768-6.jpg",
+			"metroName": "Китая Город",
+			"metro": 20,
+			"timing": 2021,
+			"extra": ["high-ceiling", "storeroom", "small"]
+		},
+		{
+			"name": "ЖК Новокосинские просторы",
+			"price": "17800000",
+			"image": "https://cdn.mskguru.ru/uploads/news/v-prodazhu-vyyvedenyy-kvartiryy-v-zhk-tophills_l.jpg",
+			"metroName": "Киевская",
+			"metro": 30,
+			"timing": 2022,
+			"extra": ["panarama", "storeroom"]
+		},
+		{
+			"name": "ЖК Трущебы",
+			"price": "5090000",
+			"image": "https://img01.rl0.ru/b58a251c2a2ce701fd3f441ac885355d/c615x400i/https/news.rambler.ru/img/2020/06/26/154641.425407.3459.jpeg",
+			"metroName": "Строгино",
+			"metro": 3,
+			"timing": 2023,
+			"extra": ["panarama", "storeroom"]
+		},
+		{
+			"name": "ЖК Семь цветов ",
+			"price": "12060000",
+			"image": "https://cdn.spbguru.ru/uploads/flats/2983/kvartry-v-zhk-jurija-gagarina-32-1573129632.5635.jpg",
+			"metroName": "Марьино",
+			"metro": 17,
+			"timing": 2019,
+			"extra": ["high-ceiling", "panarama"]
+		},
+		{
+			"name": "ЖК Орех",
+			"price": "35050000",
+			"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRxf-vNjGNtBz7uuuGUWf6_1PPqbsW1ACGPEA&usqp=CAU",
+			"metroName": "Медведково",
+			"metro": 100,
+			"timing": 2020,
+			"extra": ["small"]
+		},
+		{
+			"name": "ЖК Малая Бронная",
+			"price": "40654000",
+			"image": "https://moigk.ru/upload/resize_cache/iblock/f77/283_170_70_2bd8046e86ed6dc81a753aafc271c1aeb/mkr_panorama.jpg",
+			"metroName": "ВДНХ",
+			"metro": 50,
+			"timing": 2018,
+			"extra": ["high-ceiling", "panarama", "storeroom"]
+		}
+	]
+}

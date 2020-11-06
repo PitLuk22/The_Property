@@ -1,0 +1,44 @@
+{
+	"name": "library",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"browserslist": [
+		"last 2 chrome versions",
+		"last 2 firefox versions",
+		"last 2 ios versions"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.7.4",
+		"@babel/preset-env": "^7.7.4",
+		"autoprefixer": "^10.0.1",
+		"babel": "^6.23.0",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^8.0.6",
+		"browser-sync": "^2.26.7",
+		"core-js": "^3.4.2",
+		"cssnano": "^4.1.10",
+		"cssnext": "^1.8.4",
+		"del": "^6.0.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-postcss": "^8.0.0",
+		"gulp-rename": "^2.0.0",
+		"gulp-sass": "^4.0.2",
+		"json-server": "^0.16.2",
+		"postcss": "^8.1.2",
+		"precss": "^4.0.0",
+		"webpack": "^4.41.2",
+		"webpack-stream": "^5.2.1"
+	},
+	"dependencies": {
+		"vivus": "^0.4.5"
+	}
+}

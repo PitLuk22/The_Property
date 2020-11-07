@@ -86,7 +86,8 @@ export default class Card {
 		if (this.checkMetro() && this.checkTiming() && this.checkExtra() && this.checkPrice()) {
 
 			let div = document.createElement('div');
-			div.classList.add('col-4');
+			div.classList.add("col-sm-12", "offset-sm-0", "col-md-6", "offset-md-3", 'col-lg-4', 'offset-lg-1', 'col-xl-4', 'offset-xl-0');
+			// div.classList.add('wrapper');
 
 			div.innerHTML = `
 			<div class="item">
